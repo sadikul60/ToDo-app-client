@@ -1,0 +1,46 @@
+.ItemForm{
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.lebel{
+    text-align: start;
+}
+
+.lebel h4{
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.lebel input{
+    width: 100%;
+    border-radius: 3px;
+    padding: 8px;
+    background: rgb(226, 223, 223);
+    border: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.lebel input:hover{
+    box-shadow: 2px 2px 1px gray;
+}
+
+.add-btn{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+}
+
+.add-btn:hover{
+    background: gray;
+}

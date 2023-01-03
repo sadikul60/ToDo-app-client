@@ -1,9 +1,10 @@
 import './App.css';
+import ItemForm from './components/ItemForm/ItemForm';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello ToDo!</h1>
+    <div className='container'>
+      <ItemForm></ItemForm>
     </div>
   );
 }
