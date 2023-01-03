@@ -10,10 +10,31 @@ const ItemForm = () => {
         const price = form.price.value;
 
         console.log(name, quantity, price);
-        form.reset('')
+        
+        const FoodItems = {
+            name,
+            quantity,
+            price
+        }
+
+        //save food Items information to the database
+         fetch('http://localhost:5000/add/item', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(FoodItems),
+        })
+        .then(res => res.json())
+        .then(data => {
+            // toast.success('Product Uploaded successfully.');
+            console.log(data);
+            form.reset('');
+        }) 
     }
     return (
         <div className='ItemForm'>
+            <h2>Food List</h2>
             <form onSubmit={handleSubmit}>
                 <div className='lebel'>
                     <h4>Food Name</h4>
